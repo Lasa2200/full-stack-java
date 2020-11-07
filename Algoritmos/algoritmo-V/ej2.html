@@ -1,0 +1,37 @@
+<script>
+//2.	Dado un array, mueve todos los valores un espacio de derecha a izquierda eliminando
+// el primer valor y dejando un 0 para el último valor. Por ejemplo, moverAdelante([1,2,3])
+// debiera dar como resultado [2,3,0].
+
+
+
+function transformacion(x){
+    var val=[]
+    for(var i=0;i<x.length;i++){
+     if(i==(x.length-1)){
+         val.push(0)
+         break
+     }
+     x[i]=x[i+1]
+        val.push(x[i])
+  }
+  return val
+  }
+y = transformacion([1,2,3]);
+console.log(y);
+
+function moverAdelante(arr){
+    for(var i=0; i<arr.length-1; i++){  
+      arr[i]=arr[i+1]; 
+      }
+      if(i==arr.length-1){
+        arr[i]=0;
+      }
+    return arr;
+}
+console.log(moverAdelante([1,2,3]))
+
+
+
+
+</script>

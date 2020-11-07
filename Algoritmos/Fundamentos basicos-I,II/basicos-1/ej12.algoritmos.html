@@ -1,0 +1,47 @@
+<script>
+//Escribe una función que intercambie el primer y el último valor de cualquier array. 
+//La extensión mínima predeterminada del array es 2 (ej: [1,5,10,-2] será [-2,5,10,1]).
+//[1,5,10,-2]
+function intercambiarvalores(arreglo){
+    var arreglo_modificado =[];
+    var inicio=arreglo[0];
+    var final= arreglo[arreglo.length-1];
+
+    arreglo_modificado= arreglo;
+    arreglo_modificado[0]=final;
+    arreglo_modificado[arreglo_modificado.length-1]=inicio;
+
+    return arreglo_modificado;
+}
+
+
+    var arreglo=[1,5,10,-2];
+    console.log(arreglo);
+    var a= intercambiarvalores(arreglo);
+    console.log(a);
+
+
+
+// otra forma
+//Escribe una función que intercambie el primer y el último valor de cualquier array. 
+//La extensión mínima predeterminada del array es 2 (ej: [1,5,10,-2] será [-2,5,10,1]).
+//[1,5,10,-2]
+function invertirArray(arreglo){//arreglo.length=4
+    var nuevoArreglo=[]//[-2,10,5,1]
+    for (let index = arreglo.length-1; index >=0; index--) {//index=3>2>1>0>-1
+        
+        nuevoArreglo.push(arreglo[index]);
+    }
+    return nuevoArreglo
+}
+
+console.log(invertirArray([1,5,10,-2]))
+
+
+</script>
+
+
+
+
+
+

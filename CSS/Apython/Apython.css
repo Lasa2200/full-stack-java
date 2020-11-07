@@ -1,0 +1,129 @@
+.bigbox {
+    width: 970px;
+    background-color: rgb(49, 49, 170);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.encabezado {
+    width: 970px;
+    background-color: rgb(49, 49, 170);
+}
+
+.logopython {
+    height: 91px;
+    margin-right: 304px;
+    padding: 35px;
+    display: inline-block;
+}
+
+h5 {
+    display: inline-block;
+    color: whitesmoke;
+    margin-left: 8px;
+    margin-top: 1px;
+    position: relative;
+    
+}
+
+.textsearch{
+    height: 119px;
+    vertical-align: top;
+    padding: 5px;
+    display: inline-block; 
+}
+.botones {
+    padding: 15px;
+    background-color: rgb(94, 92, 92);
+    border-radius: 15px;
+    height: 28px;
+    vertical-align:top;
+}
+
+#search {
+    width: 30px;
+    height: 15px;
+}
+
+#ir {
+    background-color: rgb(88, 122, 173);
+}
+
+.botones2 a{ 
+        background-color: #a7b4ee;
+        color: rgb(238, 230, 230);
+        padding: 13px 46px;
+        cursor: pointer;
+        float: left;
+        text-decoration: none;
+        border: 10px solid transparent;
+}
+
+.boxlista {
+    width: 250px;
+    height: 50px;
+    padding: 10px;
+    color: lavender;
+    display: inline-block;
+    font-size: 25px;
+    vertical-align:top;
+    font-style: italic;
+}
+h2{
+    color: rgb(222, 224, 79);
+}
+hr{
+    border: 3px solid blue;
+    display: inline-block;
+    width: 300px;
+
+
+
+    
+
+}
+.texto{
+    color: rgb(238, 233, 213);
+    text-align: center;
+    display: inline-block;
+    text-align: top;
+    font-size: 20pz;
+    width: 650px;
+}
+
+#cuerpo1 {
+    background-color: white;
+    display: inline-block;
+    width:970px;
+}
+
+
+.cuerpoA{
+    width:413px;
+    color: rgb(38, 36, 48);
+    display:inline-block;
+    background-color: white;
+    min-height: 313px;
+    margin: 10px;
+    vertical-align: top;
+    text-align: center;
+    margin-left: 25px;
+}
+
+.pie a {
+    text-align: center;
+    padding: 2%;
+    margin: 0%;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    color: rgb(84, 130, 230);
+    margin-left: 20px;
+
+
+}
+
+.pie p{
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}

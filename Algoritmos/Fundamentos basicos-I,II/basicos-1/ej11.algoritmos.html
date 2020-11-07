@@ -1,0 +1,59 @@
+<html>
+
+    <script>
+/*11.-Max/Min/Avg: Dado un array con múltiples valores,
+escribe una función que devuelva un nuevo array que
+solo contenga el valor mayor (max), menor (min) 
+y promedio (avg) del array original (ej: [1,5,10,-2] 
+devolverá [10,-2,3.5])*/
+
+function maximo_arreglo(arreglo){
+    var maximo;
+    maximo_arreglo[0];
+    for (var i=0; i<arreglo.length; i++){
+        if(maximo<arreglo[i]){
+            maximo=arreglo[i];
+        }
+    }
+    return maximo;
+}
+
+
+function minimo_arreglo(arreglo){
+    var mimomo;
+    minimo_arreglo [0];
+    for (var i=0; i<arreglo.length; i++){
+        if(minimo>arreglo[i]){
+            minimo=arreglo[i];
+        }
+    }
+    return minimo;
+} 
+
+function promedio(arreglo){
+    var promedio=0;
+    var suma=0;
+    for (var i=0; i<arreglo.length; i++){
+        suma= suma + arreglo [i];
+}
+ promedio= suma/arreglo.length;
+    return promedio;
+
+}
+
+        function retornarmaxminavg(arreglo){
+            var arreglo_modificado=[];
+            arreglo_modificado.push(maximo_arreglo(arreglo));
+            arreglo_modificado.push(minimo_arreglo(arreglo));
+            arreglo_modificado.push(promedio(arreglo));
+            
+            return arreglo_modificado;
+
+        }
+        var arreglo=[1,5,10,-2];
+       
+        var a= retornarmaxminavg(arreglo);
+        console.log(a);
+
+    </script>
+    </html>

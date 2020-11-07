@@ -1,0 +1,21 @@
+<script>   
+/*Encuentra el mayor (max): Dado un array con múltiples valores,
+ escribe una función que devuelva el número mayor
+  (ej: para [-3,3,5,7] el número mayor (max) es 7).*/
+  
+  
+function maximo_arreglo(arreglo){
+    var maximo = arreglo[0];
+    for (var i=0; i<arreglo.length; i++){
+        if(maximo<arreglo[i]){
+            maximo=arreglo[i];
+        }
+    }
+    return maximo;
+}
+
+var arreglo=[-3,3,5,7];
+console.log(arreglo);
+var a= maximo_arreglo (arreglo);
+console.log(a);
+</script>

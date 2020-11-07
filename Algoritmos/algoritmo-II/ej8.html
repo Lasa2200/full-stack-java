@@ -1,0 +1,15 @@
+
+<script>
+function looping(x,y) {// x=3;y=5
+   for(var i=0; i<x; i++) {//i=0 =>1
+      for(var j=0; j<y; j++) {// j=>1>2>3>4>5  
+         console.log(i*j);//0,0,0,0,0,0,1,2,3,4,0,2,4,8
+      } 
+   }
+   return x*y;//3*5
+}
+z = looping(3,5);// 15;
+console.log(z);//15;
+
+
+</script>

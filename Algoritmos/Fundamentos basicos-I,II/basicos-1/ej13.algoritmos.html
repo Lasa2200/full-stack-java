@@ -1,0 +1,27 @@
+
+<script>
+/*13.-De Número a String: Escribe una función que tome un array de números
+y reemplace cualquier valor negativo por el string ‘Dojo’. Por ejemplo,
+dado el array = [-1,-3,2], tu función devolverá [‘Dojo’,‘Dojo’,2].*/
+
+function reemplazarnegativos(arreglo){
+    var arreglo_modificado=[];
+    for(var i=0;i<arreglo.length;i++){
+    if (arreglo[i]<0){
+        arreglo_modificado.push("dojo");
+    }
+    if(arreglo[i]>=0){
+        arreglo_modificado.push(arreglo[i]);
+    }
+}
+return arreglo_modificado;
+}
+var arreglo=[-1,-3,2];
+console.log(arreglo);
+var a= reemplazarnegativos(arreglo);
+console.log(a);
+
+
+
+</script>
+

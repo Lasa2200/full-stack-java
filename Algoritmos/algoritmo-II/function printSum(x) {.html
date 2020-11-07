@@ -1,0 +1,22 @@
+<script>
+//Completa el código de más abajo para que la función imprima enteros 
+//(integers) de 0 a x y donde cada entero imprima la suma (sum) parcial. 
+//Haz que la función entregue la suma final.
+
+
+function printSum(x) {
+  var sum = 0;
+  
+  for(var i = 0; i<=x; i++){
+    console.log(i);
+    
+    sum = sum + i;
+    console.log(sum);
+  }
+  return sum
+}
+y = printSum(255) //debería imprimir todos los enteros de 0 a 255 y que cada entero imprima la suma parcial.copy
+console.log(y) // debería imprimir 32640
+
+
+</script>

@@ -1,0 +1,59 @@
+<script>
+//Dado un array, imprime los valores máximos (max), mínimos (min)
+// y promedio (average) para el array.
+
+        function maxminprom(arreglo){//arreglo=[3,7,1] ; 3->length
+    var arrAux=[];
+    var suma=0;//3>10>9
+    var promedio=0;//3
+    var minimo=arreglo[0];//-1
+    var maximo=arreglo[0];//3>7
+
+    for(var i =0; i < arreglo.length; i++){//i=0>1>2>3
+        //valor maximo
+        if(maximo < arreglo[i]){
+            maximo = arreglo[i]
+        }
+        //valir minimo
+        if(minimo > arreglo[i] ){
+            minimo = arreglo[i]
+        }
+        suma= suma + arreglo[i]
+    }
+    promedio = suma/arreglo.length
+    arrAux.push(maximo)
+    arrAux.push(minimo)
+    arrAux.push(promedio)
+
+    return arrAux
+
+}
+
+b= maxminprom([3,7,-1])
+console.log(b)//[7,-1,3]
+
+
+//[3,1,2]
+//[-1,-4,0]
+function maximominimoprom(arreglo){
+
+    var arregloAuxiliar = []
+    var minimo=arreglo[0]//-1> -4
+    var maximo=arreglo[0]
+    var suma=0
+    var promedio=0
+
+    for(var i =0; i < arreglo.length;i++){
+        if(minimo > arreglo[i]){
+            minimo = arreglo[i]
+        }
+
+    }
+
+
+
+
+
+
+
+</script>

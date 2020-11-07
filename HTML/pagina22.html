@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina2|reforzamiento</title>
+</head>
+
+<body>
+
+    <body>
+        <div>
+            <!-- input siempre lleva type, for y id deben llevar el mismo nombre-->
+            <label for="nombre">NOMBRE</label><!-- agrega un texto al lado del imput-->
+            <input type="text" id="nombre" name="nombre"><br> <!-- name se usa solo cuando se trabaja con formularios-->
+            <input type="text" id="apellido" name="apellido">
+            <label for="apellido">NOMBRE</label><br>
+            <input type="text" id="apellido" value="18">
+            <input type="text" id="edad" placeholder="ingrese edad"><br>
+            <!--placeholder es solo informativo-->
+            <!--type password-->
+            <label for="pass">Password</label>
+            <input type="password" id="pass" placeholder="ingrese Password"></input><br>
+            <br>
+            <!-- Radio-->
+            <!-- se usan para elegir solo una opcion-->
+            <!-- los name deben ser los mismos-->
+            <input type="radio" id="si" name="opcion" value="1"><!-- value es la info que quiero guardar en data-->
+            <label for="si">seleccione si</label><!-- si agrego br se ponen en lista-->
+            <input type="radio" id="no" name="opcion" value="0">
+            <label for="no">seleccione no</label>
+            <br>
+            <!--SELECT tienen dentro opciones para elegir estan en listas desplegables-->
+            <label for="selector">Dias de la semana</label>
+            <select id=" selector" name=" selector">
+                <option value="1">seleccione opcion...</option>
+                <option value="lunes">Lunes</option>
+                <option value="martes">Martes</option>
+                <option value="miercoles">Miercoles</option>
+            </select>
+            <br><br>
+            <!--CHECKBOX:se utilizan cuando el usuario pueda elegir entre opciones, los name deben ser los mismos, pero los VALUES TIENEN QUE SER UNICOS para el grupo checkbox-->
+    <label for="">Lunes</label>
+    <input type="checkbox" id="lunes" name="semana" value="1">
+    <label for="">Martes</label>
+    <input type="checkbox" id="martes" name="semana" value="2">
+    <label for="">Miercoles</label>
+    <input type="checkbox" id="miercoles" name="semana" value="3">
+    <label for="jueves">
+        <input type="checkbox" id="jueves" name="semana" value="4">
+        JUEVES
+    </label>
+    <input type="checkbox" id="viernes" name="semana" value="5">
+    <label for="">VIERNES</label><br>
+    <!--botones-->
+    <!-- VALUE ES EL NOMBRE DENTRO DEL BOTON-->
+    <input type="button" id="boton" value="ACEPTAR">
+    <!-- SUBMIT: se utiliza cuando trabajamos con form(formularios)-->
+    <input type="submit" id="boton2" value="ENVIAR">
+    <input type="submit" id="boton2" value=" ">
+
+
+        </div>
+
+    </body>
+
+</body>
+
+</html>

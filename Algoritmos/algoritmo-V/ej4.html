@@ -1,0 +1,19 @@
+<script>
+//Crea una función que cambie un array repitiendo sus valores originales (manteniendo el mismo orden).
+// Por ejemplo, repetirValores([4,”Ulysses”, 42, false])
+// debiera dar [4,4, “Ulysses”, “Ulysses”, 42, 42, false, false].
+
+function duplica_par(x){
+        var nuevo_arreglo=[];
+    for(var index=0; index< x.length; index++){
+        nuevo_arreglo.push(x[index]);
+        if (index % 2==0 || index %2==1){
+            nuevo_arreglo.push(x[index]);
+        }
+    }
+return nuevo_arreglo;
+}
+var z= duplica_par([4,"Ulysses", 42, false]);
+console.log(z);
+
+</script>

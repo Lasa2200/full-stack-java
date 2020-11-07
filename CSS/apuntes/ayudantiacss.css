@@ -1,0 +1,41 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#id {}
+
+p {
+    color: blue;
+}
+
+#parrafo2 {
+    text-align: center;
+    color: green;
+    background-color: aquamarine;
+}
+
+.clase2 {
+    background-color: chartreuse;
+    color: black !important;
+}
+
+.clase1 {
+    font-size: 20px;
+    background-color: brown;
+}
+
+h6.clase1 {
+    font-size: 15px;
+    color: yellow;
+}
+
+p.clase3 {
+    width: 30px;
+    height: 15px;
+    color: blueviolet;
+}
+
+p.ancho {
+    width: 300px;
+}

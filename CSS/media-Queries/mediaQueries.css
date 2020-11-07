@@ -1,0 +1,69 @@
+
+#Desktop{
+    background-color:#FFFF9A;
+    border-style: ridge;
+    width:90%;
+    padding: 7px;
+}
+#Tablet{
+    background-color:#FFFF9A;
+    border-style: ridge;
+    width:90%;
+    padding: 7px;
+    margin-top: 0px;
+    
+}
+#phone{
+    background-color:#FFFF9A;
+    border-style: ridge;
+    width:90%;
+    padding: 7px;
+}
+.navbtn2 {
+    background-color:#CCCCCC;
+    text-align: center;
+    border-style: ridge;
+    width:90%;
+    padding: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbtn1{
+    background-color: #b4b3b3;
+    border-style:ridge;
+    width: 90%;
+    padding: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@media only screen and (max-width:480px){
+    #Desktop {
+        display: none;
+     
+    }
+    #Tablet{
+        display: none;
+    }
+  
+}
+
+@media only screen and (min-width: 481px){
+    #Desktop {
+        display: none;
+    }
+    #phone{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    #Tablet{
+        display: none;
+    }
+    #phone{
+        display: none;
+    }
+    #Desktop{
+        display: block;
+}
+}

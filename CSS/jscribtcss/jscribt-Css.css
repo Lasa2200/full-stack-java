@@ -1,0 +1,59 @@
+#big-box{
+    width: 950px;
+    background-color:rgb(46, 46, 107);
+    margin: 0px auto;
+    padding: 20px;
+    color: white;
+}
+div {
+  display: block;
+}
+
+
+#encabezado{
+    background-color: rgb(192, 70, 70);
+    height:50px;
+    margin:15px auto;
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: left;
+    padding:1% ;
+}
+
+#menu{
+    background-color: rgb(49, 135, 156);
+    width: 160px;
+    display:inline-block;
+    vertical-align:top;
+    border-radius: 10px;
+    font-size: 12px;
+    text-decoration: underline;
+    padding: 15px;
+    padding-top: 30px;
+    color: white;
+    text-align: left;
+}
+#cuerpo{
+    background-color: rgb(13, 22, 22);
+    display: inline-block;
+    width: 700px;
+    margin-left: 14px;
+    padding: 1%;
+    border-radius: 5%;
+    color:white;
+    text-align: left;
+    
+}
+a{
+color: rgb(95, 196, 196);
+display: inline-flex;
+} 
+#pie{
+    background-color: rgb(144, 146, 146);
+    width: 895px;
+    padding: 1%;
+    border-radius:20px;
+    padding-left: 15px;
+    margin: 15px;
+}
+

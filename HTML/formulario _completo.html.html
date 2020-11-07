@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8"> <!--reconocer caracter especial-->
+
+        <title> Mi primer sitio web </title>
+    </head> 
+    <body>
+        <form action="process.php" method="post">
+            <p>MI FORMULARIIO DE REGISTRO</p>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">  <br>
+            <br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido"> <br>
+            <br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"><br>
+            <br>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password"><br>
+            <br>
+            <label for="pw_confirm">Confirmar:</label>
+            <input type="password" id="pw_confirm" name="password_confirmacion"><br>
+            <br>
+        
+            <label for="cumpleanio">cumpleaños:</label>
+            <input type="date" id="cumpleanio" name="cumpleanio" value="">
+            
+            <br>
+            <br>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="masculino" name="masculino" value="masculino">
+           
+            <label for="femenino">Female</label>
+            <input type="radio" id="femenino" name="femenino" value="femenino">
+            
+            <label for="otro">otro</label>
+            <input type="radio" id="otro" name="otro" value="otro">
+            <br>
+            <p>Escribe unas palabras sobre ti mismo:</p>
+            <textarea name="descripcion"></textarea>
+            <BR>
+            <BR>
+            <label for="lenguaje"> Lenguaje favorito: </label>
+            <select name="lenguaje" id="lenguaje">
+                <option value="js">JavaScript</option>
+                <option value="p">Phyton</option>
+                <option value="h">Html</option>
+            </select>
+            <BR>
+            <BR>
+           <input type="submit" value="Enviar">
+           
+        </form>   
+      
+    </body>
+</html>
+

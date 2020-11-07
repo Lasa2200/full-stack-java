@@ -1,0 +1,36 @@
+<script>
+/*Array: Segundo más grande: Devuelve el segundo elemento más grande de un array. 
+Dado [42,1,4,3.14,7], devuelve 7.  Si el array es muy pequeño, devuelve null.*/
+
+function masgrande(x){
+    var masgrande1 =0;
+    var masgrande2=0;
+
+    if (x.length<2){
+        return null;
+    }
+
+    for (var i= 0; i<= x.length; i++){/* solo para detectar el + grande*/
+        if(masgrande1<=x[i]){
+            masgrande1=x[i];
+        }
+    }
+    for (var i= 0; i<= x.length; i++){/* detecta el 2 mas grande*/
+        if(masgrande1==x[i]){/* mas grande =0*/
+        x[i]=0;
+        }
+        if(masgrande2<x[i]){ /* detectar el nuevo mas grande*/
+            masgrande2=x[i];
+        }
+    }
+        return masgrande2;
+}
+
+x = [42,1,4,3.14,7];
+
+console.log(masgrande(x));
+
+
+
+
+</script>

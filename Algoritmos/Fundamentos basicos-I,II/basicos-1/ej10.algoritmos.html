@@ -1,0 +1,32 @@
+<html>
+<!--Negativos: Dado un array con múltiples valores, 
+    escribe una función que reemplace cualquier número 
+    negativo dentro del array por 0. Cuando el programa esté listo, 
+    el array no debiera contener números negativos
+    (ej: [1,5,10,-2] se convertirá en [1,5,10,0])..-->
+
+        <script>
+
+
+
+
+
+function reemplazarnegativos(arreglo){
+    var arreglo_modificado=[];
+    for(var i=0;i<arreglo.length;i++){
+    if (arreglo[i]<0){
+        arreglo_modificado.push(0);
+    }
+    if(arreglo[i]>=0){
+        arreglo_modificado.push(arreglo[i]);
+    }
+}
+return arreglo_modificado;
+}
+var arreglo=[1,5,10,-2];
+console.log(arreglo);
+var a= reemplazarnegativos(arreglo);
+console.log(a);
+
+        </script>
+    </html>

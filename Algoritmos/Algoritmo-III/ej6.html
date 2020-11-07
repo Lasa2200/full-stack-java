@@ -1,0 +1,16 @@
+<script>
+function a(x){// [5,7,-1,4]
+    for(var i=0; i<x.length; i++){
+      if(x[i] > 5){
+           x[i] = "Coding";
+      }
+      else if(x[i] < 0){
+           x[i] = "Dojo";
+      }
+    }
+    return x;//[5,"coding";"dojo";4]
+}
+console.log(a([5,7,-1,4]))//[5,"coding";"dojo";4]
+
+
+</script>

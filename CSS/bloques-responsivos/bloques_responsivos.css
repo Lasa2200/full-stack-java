@@ -1,0 +1,116 @@
+
+
+
+.container{
+    width:100%;
+    margin: 0px;
+  
+}
+
+   @media  screen and (min-width:781px) {
+        .header {
+            width: 99%;
+            height:200px;
+            background-color: green;
+            margin: 10px;
+        }
+        .menu{
+            width:24%;
+            height:300px;
+            margin: 10px;
+            background-color: blue;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .bigbox{
+            width: 73%;
+            height:386px;
+            margin-left: 10px;
+            background-color: red;  
+        display: inline-block;
+        }
+    .box_int{
+            width: 31%;
+            height:55%;
+            margin: 10px;
+            background-color: yellow;  
+            display: inline-block;
+            vertical-align: top;
+        }
+    .footer{
+        width:98%;
+            height:33%;
+            margin: 10px;
+            background-color: purple;
+            align-content: center;
+            
+    }
+    }
+      
+    @media screen and (min-width: 481px) and (max-width:780px){
+        .header {
+            width: 99%;
+            height:200px;
+            background-color: green;
+            margin-bottom: 10px;
+        }
+       
+        .bigbox{
+            width: 663px;
+            height:580px;
+            margin-left: 10px;
+            background-color: red;  
+        display: inline-block;
+        }
+    .box_int{
+            width: 307px;
+            height:180px;
+            margin: 10px;
+            background-color: yellow;  
+            display: inline-block;
+            vertical-align: top;
+        }
+    .footer{
+        width: 640px;
+            height:150px;
+            margin: 10px;
+            background-color: purple;
+            align-content: center;
+            
+    }
+    }
+    
+    @media screen and (max-width: 481px) {
+        .header {
+            width: auto;
+            height:200px;
+            background-color: green;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+       
+        .bigbox{
+            width: 95%;
+            height:815px;
+            margin:10px;
+            background-color: red;  
+        display: inline-block;
+        }
+    .box_int{
+            width: 95%;
+            height:180px;
+            margin: 10px;
+            margin-bottom: 15px;
+            background-color: yellow;  
+            
+        }
+    .footer{
+        width: auto;
+            height:200px;
+            margin: 10px;
+            background-color: purple;
+            align-content: center;
+            
+    } 
+    }

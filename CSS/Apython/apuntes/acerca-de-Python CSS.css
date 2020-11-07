@@ -1,0 +1,145 @@
+body
+{
+    background-color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header p
+{
+    text-align: right;
+    color: white;
+    margin-right: 1%;
+}
+header a
+{
+    color: orange;
+}
+header img
+{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 30%;
+}
+header section
+{
+    margin: 0 0 0 40%;
+    padding: 1%;
+    text-align: center;
+    background-color: darkslategrey;
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+}
+header nav
+{
+    display: inline-block;
+    width: 90%;
+    margin: 0 0 0 3%;
+    padding: 2%;
+    text-align: center;
+    background-color: blue;
+    border-radius: 5px;
+}
+nav a
+{
+    text-decoration: none;
+    margin: 0 1% 0 1%;
+    font-size: 35px;
+}
+#submenu
+{
+    display: inline-block;
+    width: 28%;
+    padding: 5% 0 0 0;
+    margin: 0;
+    vertical-align: top;
+    font-size: 20px;
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+}
+div li
+{
+    list-style-position: inside;
+    marker: none ;
+    margin: 15px;
+    list-style-type: ;
+}
+#present
+{
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    padding: 2%;
+    width: 65%;
+}
+#present #pre1
+{
+    font-size: 20px;
+    color: white;
+}
+#present #pre2
+{
+    color: orange;
+    font-size: 25px;
+    font-style: italic;
+}
+#present #pre3
+{
+    color: white;
+    font-size: 25px;
+}
+#articulos
+{
+    background-color: white;
+    padding: 0 15% 0 15%;
+    margin: 0;
+    font-size: 14px;
+    width: 70%;    
+}
+#articulos article
+{
+    width: 48%;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+#articulos a
+{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+#articulos li
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: square;
+    list-style-position: outside;
+}
+hr
+{
+    border: 3px solid blue;
+}
+footer
+{
+    text-align: center;
+}
+footer a
+{
+    display: inline-block;
+    font-size: 25px;
+    text-decoration: none;
+    color: cornflowerblue;
+    padding: 2%;
+    margin: 0%;
+}
+footer p
+{
+    color: white;
+    font-size: 12px;
+}
