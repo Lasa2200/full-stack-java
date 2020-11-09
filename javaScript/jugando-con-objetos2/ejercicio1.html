@@ -1,0 +1,26 @@
+<script>
+var dojo = {};                                 // crea un objeto vacío
+dojo = {
+  name: "Coding Dojo",                         // la propiedad puede almacenar un string
+  number_of_students: 25,                      // la propiedad puede almacenar un número
+  instructors: ["Andrew", "Michael", "Jay"],   // la propiedad puede almacenar arrays
+  location: {                                  // ¡la propiedad puede incluso almacenar otro objeto!
+    city: "San Jose",
+    state: "CA",
+    zipcode: 95112
+  }
+}                                              // accede a las propiedades del objeto con notación de punto (.)
+console.log(dojo.name, dojo.number_of_students, dojo.instructors, dojo.location);
+console.log(dojo["name"]);                     // o notación de [] corchete (nota: escribe la clave entre comillas)
+
+</script>
+
+
+<script>
+
+    var users = [{name: "Michael", age:37}, {name: "John", age:30}, {name: "David", age:27}];
+    
+    console.log (user.name, user.age); 
+    console.log(user["name"]);
+    
+    </script>
