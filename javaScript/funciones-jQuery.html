@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>My jQuery basic assignment!</title>
+    <meta name="my jquery" content="jQuery!">
+    <link rel="stylesheet" type="text/css" href="funciones-jQuery.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.oculta').click(function() {
+                alert("#¡Haz cliqueado un botón!");
+            });
+            $('.mensaje').click(function() { //llamada al boton
+                $(".hide").hide(); // llamada al parrafo
+            });
+            $('.show').click(function() { // llamada el boton
+                $(".hide").show(); // llamada al parraffo
+            });
+            $('.ocultaToggle').click(function() {
+                $(".muestra").toggle();
+            });
+            $(".SlideDow").click(function() { // 
+                $(".up").slideDown();
+            });
+            $('.SlideUp').click(function() { // 
+                $(".up").slideUp();
+            });
+            $('.ocultaslide').click(function() { // 
+                $(".up").slideToggle();
+            });
+            $('.ocultain').click(function() {
+                $(".out").fadeIn();
+            });
+            $('.ocultaout').click(function() { // llamada el boton
+                $(".out").fadeOut(); // llamada al parraffo
+            });
+            $('.addbutton').click(function() { // llamada el boton
+                $(".add").addClass("miclase"); // llamada al parraffo, tengo que crear una clase aparte? de que tipo?
+            });
+            $('.antes').click(function() { // llamada el boton
+                $(".before").before("Copio aqui!!!"); // llamada al parraffo
+            });
+            $('.despues').click(function() { // llamada el boton
+                $(".after").after("Pego acá!!!"); // llamada al parraffo
+            });
+            $('.append').click(function() { // llamada el boton
+                $(".pappend").append("<h2>.Hola a todos! </h2>"); // llamada al parraffo
+            });
+            $('.obtenerhtml').click(function() { // llamada el boton, Obtenga el contenido HTML del primer elemento del conjunto de elementos coincidentes o configure el contenido HTML de cada elemento coincidente.
+                $(".html").html("<h2>.Hola a todos! </h2>"); // llamada al parraffo
+            });
+            $('.botonAttr').click(function() { // llamada el boton, no funciona
+                var atributo = $(".imagen").attr("height", "200px");
+                $(".imagen").append(atributo) // llamada al parraffo
+            });
+            $('.botonval').click(function() { // llamada el boton, no funciona
+                console.log($("#nombres").val()); // llamada al parraffo
+            });
+            $('.botontext').click(function() { // llamada el boton, no funciona
+                $(".ptext").text("Esto esta loooco!!"); // llamada al parraffo
+            });
+        });
+        /*$(".oculta").click(function(){//.hide oculta
+                $(".generico").hide();
+            });*/
+    </script>
+
+
+</head>
+
+<body>
+    <div class="topnav">
+        <button type="submit">
+            <img src="flecha-left_green.png" alt="flecha1" /></button>
+        <button type="submit"><img src="flecha derecha.png" alt="flecha2" /></button>
+        <button type="submit"><img src="x-icon.png" alt="x" /></button>
+        <button type="submit"><img src="home.png" alt="home" /></button>
+        <!--para ingresar un icono en un boton-->
+        <input type="text" id="search" placeholder="http://localhost/jQuery.">
+        <button type="submit"><img src="lupa.png" alt="home" /></button>
+    </div>
+
+    <div class="bigbox">
+        <h1> My jQuery basic assignment!</h1>
+        <br>
+        <br>
+        <div class="boxjQuery">
+            <div id="funciones">
+                <h2>.CLICK</h2>
+                <p> Vincula un controlador de eventos al evento de Javascript "click" o activa ese evento en un elemento</p>
+                <button class="oculta">.Click</button>
+            </div>
+            <div id="funciones">
+                <h2>.Hide</h2>
+                <p class="hide">Oculta los elementos coincidentes</p>
+                <h2>.Show</h2>
+                <p class="muestra"> Muestra los elementos coincidentes</p>
+                <h2>.Toggle</h2>
+                <p class="Togglep">Muestra u Oculta los elementos coincidentes</p>
+                <button class="mensaje">.Hide</button>
+                <button class="show">.Show</button>
+                <button class="ocultaToggle">.Toggle</button>
+            </div>
+            <div id="funciones">
+                <h2>.Slide Dow</h2>
+                <p class="dow">Muestra los elementos emparejados con un movimiento deslizante</p>
+                <h2>.Slide Up</h2>
+                <p class="up">Oculta elementos emparejados con un movimiento</p>
+                <h2>.Slide Toggle</h2>
+                <p class="stoggle">Muestra u oculta los elementos emparejados con un movimiento</p>
+                <button class="SlideDow">.Slide Dow</button>
+                <button class="SlideUp">.Slide Up</button>
+                <button class="ocultaslide">.Slide Toggle</button>
+            </div>
+            <div id="funciones">
+                <h2>.Fadeln</h2>
+                <p class="in">Muestra los elementos coincidentes atenuandolos a opaco</p>
+                <h2>.Fadout</h2>
+                <p class="out">Oculta los elementos coincidentes atenuandolos a transparentes</p>
+                <button class="ocultain">.Fadeln</button>
+                <button class="ocultaout">.FadeOut</button>
+            </div>
+            <div id="funciones">
+                <h2>.AddClass</h2>
+                <p class="add otra clase">Agrega la clase() espcificada para cada elemento en el conjunto de elementos coincidentes</p>
+                <button class="addbutton">.AddClass</button>
+            </div>
+            <div id="funciones">
+                <h2>.Before</h2>
+                <p class="before">Inserte contenido, especificado por el parámetro, antes de cada elemento en el conjunto de elementos coincidentes.</p>
+                <h2>.After</h2>
+                <p class="after">Insertar contenido, especificado por el parámetro, después de cada elemento en el conjunto de elementos coincidentes.</p>
+                <button class="antes">.Before</button>
+                <button class="despues">.After</button>
+            </div>
+            <div id="funciones">
+                <h2>.Append</h2>
+                <p class="pappend">Inserte contenido, especificado por el parámetro, al final de cada elemento en el conjunto de elementos coincidentes</p>
+                <button class="append">.Append</button>
+            </div>
+            <div id="funciones">
+                <h2>.HTML</h2>
+                <p class="html">Obtenga el contenido HTML del primer elemento del conjunto de elementos coincidentes o configure el contenido HTML de cada elemento coincidente.</p>
+                <button class="obtenerhtml">.HTML</button>
+            </div>
+            <div id="funciones">
+                <h2>.Attr</h2>
+                <p class="pAttr">Obtenga el valor de un atributo para el primer elemento en el conjunto de elementos coincidentes o establezca uno o más atributos para cada elemento coincidente.</p>
+                <img class="imagen" src="home.png" alt="home">
+                <button class="botonAttr">.Attr</button>
+            </div>
+            <div id="funciones">
+                <h2>.Val</h2>
+                <p class="pval">Obtenga el valor actual del primer elemento en el conjunto de elementos coincidentes o establezca el valor de cada elemento coincidente.</p>
+                <button class="botonval">.Val</button>
+                <input type="text" id="nombres">
+            </div>
+            <div id="funciones">
+                <h2>.Text</h2>
+                <p class="ptext">Obtenga el contenido de texto combinado de cada elemento en el conjunto de elementos coincidentes, incluidos sus descendientes, o establezca el contenido de texto de los elementos coincidentes.</p>
+                <button class="botontext">.Text</button>
+            </div>
+
+</body>
+
+<body>
+
+
+
+</body>
+
+</html>

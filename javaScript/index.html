@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>jquery Demo</title>
+    <src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+        </src=> $(document).ready(function() { console.log("document is ready!"); $("h1").html("Lisbeth"); $("h1").click(function() { console.log("h1 is clicked!!!") $("p").toggle(); }) });*/
+
+
+        <script>
+            $(document).ready(function() {
+                console.log("document is ready!");
+                $("h1").html("Lisbeth");
+                $("h1").click(function() {
+                    console.log("h1 is clicked!!!") $("p").toggle();
+                })
+
+            });
+
+            $(document).ready(function() {
+                $('#myParagraph').text();
+            });
+        </Script>
+
+        <body>
+            <p id='myParagraph'> ¡Este es mi párrafo! </p>
+        </body>
+
+        <script>
+            $(document).ready(function() {
+                var myText = $('#myParagraph').text();
+                alert(myText);
+            })
+        </script>
+
+        <body>
+            <p id='myParagraph'> ¡Este es mi párrafo! </p>
+        </body>
+        <script>
+            $(document).ready(function() {
+                $('button').click(function() {
+                    $('#myParagraph').text('mira como I .text() funciona como setter!');
+                })
+            })
+        </script>
+
+        <body>
+            <p id='myParagraph'> ¡Este es mi párrafo! </p>
+            <button> ¡Cliquéame para cambiar el párrafo! </button>
+        </body>
+
+
+
+
+
+</head>
+
+<body>
+    <h1>Coding Dojo</h1>
+
+    <p>jkflkdldkgldkgh</p>
+    <p>lkdfljgl</p>
+
+
+
+
+
+
+    //$(document).ready(function() { $('img').hover(function() { var temp = $(this).attr('src'); $(this).attr('src', $(this).attr('alt-src')); $(this).attr('alt-src', temp); }); });
+
+
+</body>
+
+</html>

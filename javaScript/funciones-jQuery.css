@@ -1,0 +1,62 @@
+    .topnav {
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        font-family: comic sans;
+    }
+    
+    h1 {
+        margin-left: 287px;
+        font-size: 45px;
+    }
+    
+    .button {
+        cursor: pointer;
+        padding: 16px 24px;
+        width: 50px;
+    }
+    
+    img {
+        font: 700 1em Tahoma, Arial, Verdana, sans-serif;
+        background-color: rgb(250, 245, 245);
+        cursor: pointer;
+        width: 25px;
+    }
+    
+    #search {
+        width: 450px;
+        border: 2px solid #ec2f68;
+    }
+    
+    #funciones {
+        width: 350px;
+        height: 410px;
+        background-color: rgb(243, 197, 180);
+        display: inline-block;
+        text-align: center;
+        padding: 5px;
+        vertical-align: top;
+        margin: 10px;
+        border: 2px solid #ec2f68;
+        border-radius: 5px;
+    }
+    
+    button {
+        border-color: rgb(110, 202, 202);
+        padding: 5px;
+        width: 100px;
+    }
+    
+    p {
+        color: rgb(58, 55, 55);
+        font: 510 1em Tahoma, Arial, Verdana, sans-serif;
+    }
+    
+    .miclase {
+        background-color: yellow;
+    }
+    
+    .pAttr {
+        color: rgb(58, 55, 55);
+        font: 510 1em Tahoma, Arial, Verdana, sans-serif;
+    }
