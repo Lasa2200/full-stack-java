@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>My jQuery basic assignment!</title>
+    <meta name="my jquery" content="jQuery!">
+    <link rel="stylesheet" type="text/css" href="ninja-desapareciendo.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.ninja').click(function() { //click ninja
+                $(this).hide(); // llamada al parrafo // oculta este elemento que le hago click
+            });
+            $(".botontext").click(function() {
+                $(".ninja").show();
+            });
+
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="topnav">
+        <button type="submit"><img id ="barra"  src="imagen/flecha-left_green.png" alt="flecha1" /></button>
+        <button type="submit"><img id ="barra"  src="imagen/flecha derecha.png" alt="flecha2" /></button>
+        <button type="submit"><img id ="barra" src="imagen/x-icon.png" alt="x" /></button>
+        <button type="submit"><img id ="barra" src="imagen/home.png" alt="home" /></button>
+        <!--para ingresar un icono en un boton-->
+        <input type="text" id="search" placeholder="http://localhost/jQuery.">
+        <button type="submit"><img id ="barra" src="imagen/lupa.png" alt="home" /></button>
+    </div>
+
+    <div class="bigbox">
+        <h1>jQuery - assignment 1 !</h1>
+        <br>
+        <br>
+        <div class="contenedor">
+            <img class="ninja" src="imagen/jiraija4.jpg" alt="jiraija">
+            <img class="ninja" src="imagen/naruto.gif" alt="naruto">
+            <img class="ninja" src="imagen/sannin.png" alt="jiraija">
+            <img class="ninja" src="imagen/Naruto7.png" alt="naturo">
+            <img class="ninja" src="imagen/Naruto5.png" alt="jiraija">
+            <img class="ninja" src="imagen/naruto2.jpg" alt="naruto">
+            <img class="ninja" src="imagen/jirayja.gif" alt="jiraija">
+            <img class="ninja" src="imagen/ninja.jpg" alt="naruto">
+        </div>
+        <br><br>
+        <button class="botontext">Restaurar</button>
+    </div>
