@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>CURSOR FUERA</title>
+    <meta name="CURSOR-IN" content="jQuery!">
+    <link rel="stylesheet" type="text/css" href="Cursor.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $('img').hover(function() {
+                var temp = $(this).attr("src");
+                $(this).attr("src", $(this).attr("data-alt-src"));
+                $(this).attr("data-alt-src", temp);
+            });
+
+            /*$("img").click(function() {
+                var temp = $(this).attr("src");
+                $(this).attr("src", $(this).attr("data-alt-src"));
+                $(this).attr("data-alt-src", temp);
+            });*/
+
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <h1>CURSOR EN/FUERA</h1>
+    <br>
+    <div class="contenedor">
+        <img src="imagen/SMART-ALIO-01.jpg" data-alt-src="imagen/ALIO-01.jpg" data-alt-src 2="imagen/SMART-ALIO-01.jpg" />
+        <img src="imagen/SMART-EASTMOON-01.jpg" data-alt-src="imagen/EASTMOON-01.jpg" data-alt-src 2="imagen/SMART-EASTMOON-01.jpg" />
+        <img src="imagen/SMART-JACKBYE-01.jpg" data-alt-src="imagen/JACKBYE-01.jpg" data-alt-src 2="imagen/SMART-JACKBYE-01.jpg" />
+        <img src="imagen/SMART-SOUTHSIDE-01.jpg" data-alt-src="imagen/SOUTHSIDE-01.jpg" data-alt-src 2="imagen/SMART-SOUTHSIDE-01.jpg" />
+        <img src="imagen/gentle-monster-diplo-.jpg" data-alt-src="imagen/wolf-clip.jpg" data-alt-src 2="imagen/gentle-monster-diplo-.jpg" />
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+img {
+    display: inline-block;
+    width: 220px;
+    height: 200px;
+    border: solid black;
+    padding: 5px;
+    background-color: rgb(240, 246, 247);
+}
+
+.contenedor {
+    background-color: black;
+    padding: 20px;
+    width: 1200px;
+}
