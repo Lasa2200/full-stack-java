@@ -1,0 +1,21 @@
+<script>
+    < script >
+        $(document).ready(function() {
+            $('button').click(function() {
+                $('div').append('<h3>I am a new content</h3>');
+            });
+            $('div.a').on('mouseover', 'h3', function() {
+                $(this).css('color', 'pink');
+            });
+        });
+</script>
+
+<body>
+    <button>Click me</button>
+    <div class="a">
+        <h3>I am old content</h3>
+    </div>
+    <div class="b">
+        <h3>I am old content</h3>
+    </div>
+</body>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>PokeDex</title>
+
+</head>
+
+<body>
+    <style>
+        .contenedor {
+            text-align: center;
+            color: rgb(173, 41, 1);
+        }
+    </style>
+    <div class="contenedor">
+        <h1>Pokedex Info</h1>
+        <div class="card" style="width: 18rem;">
+            <!-- Vertically centered modal -->
+            <div class="card-body">
+                <h5 class="card-title">PokeDex</h5>
+                <div id="imagenpokemon"></div>
+                <h2 class="NOMBRE"></h2>
+                <p class="TIPO"> </p>
+                <p class="ALTURA"></p>
+                <p class="PESO"></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    for (var i = 1; i <= 151; i++) {
+        var a = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/" + i + ".png";
+        $(".contenedor").append("<img id=" + i + " src=" + a + ">");
+        console.log("<img src=" + a + ">");
+    }
+    $("img").click(function clikeo() {
+        var b = $(this).attr("id");
+        $.get(" https://pokeapi.co/api/v2/pokemon/" + b + "/", function(res) {
+            console.log(res);
+            $("#imagenpokemon").html("<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/" + b + ".png'>");
+            $(".NOMBRE").html("<h2>" + res.name + "</h2>");
+            $(".TIPO").html("<p> Tipo :" + res.types[0].type.name + "</p>");
+            $(".ALTURA").html("<p> Altura :" + res.height + "</p>");
+            $(".PESO").html("<p> Peso :" + res.weight + "</p>");
+        }, 'json');
+    });
+</script>
+
+</html>
