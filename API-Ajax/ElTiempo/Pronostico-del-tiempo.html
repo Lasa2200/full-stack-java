@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Pronostico de Tiempo</title>
+
+    <script>
+        $(document).ready(function() {
+            $('form').submit(function() {
+                url = "http://api.openweathermap.org/data/2.5/weather?q=" + $('#busqueda').val() + "&APPID=e5a77e3925861fa4205664d3a224f7a3&units=metric";
+                // your code here (build up your url)
+                $.get(url, function(res) {
+                    // your code here
+                    console.log(res);
+                    $('.NOMBRE').html("<p>" + res.name + ": " + res.weather[0].description + "</p>");
+                    $('.Temperatura').html("<p> Temperatura: " + res.main.temp + "°C</p>");
+                    $('.Coord').html("<p> Coordenadas: " + res.coord.lon + ", " + res.coord.lat + "</p>");
+                }, 'json');
+                // don't forget to return false so the page doesn't refresh
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <style>
+        .contenedor {
+            text-align: center;
+            color: rgb(75, 60, 112);
+            width: 500px;
+            background-image: url("foto/Nubes-5-1.jpeg");
+            padding: 15px;
+            height: 450px;
+            vertical-align: top;
+            margin: 10px;
+            border: 2px solid #344a53;
+            border-radius: 5px;
+            margin-left: 150px;
+        }
+        
+        #imput {
+            width: 200px;
+        }
+        
+        .card {
+            margin-left: 92px;
+        }
+        
+        h3 {
+            color: cornsilk
+        }
+    </style>
+
+    <div class="contenedor">
+        <h3> Mi primera aplicación del Tiempo</h3><br><br>
+        <form action="">
+            <label for="busqueda">Ciudad:</label>
+            <input id="busqueda" type="text">
+            <button type="submit">Buscar</button>
+        </form>
+        <div id="resultado"></div><br>
+
+        <div class="card" style="width: 18rem;">
+            <!-- Vertically centered modal -->
+            <div class="card-body">
+                <h5 class="card-title"> Como estará el día Hoy ? </h5><br>
+                <p class="NOMBRE"> </p>
+                <p class="Temperatura"> </p>
+                <p class="Coord"> </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
