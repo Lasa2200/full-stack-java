@@ -1,0 +1,19 @@
+<script>
+    //Perspectiva: Negativa - Dado un array crear y devuelve uno nuevo que contenga
+    // todos los valores del array original, pero negativos
+    // (no simplemente multiplicando por -1). Dado [1,-3,5], devuelve [-1,-3,-5].
+
+    function grande(x) {
+        gran = []
+        for (var i = 0; i < x.length; i++) {
+            if (x[i] < 0) {
+                gran.push(x[i])
+            }
+            if (x[i] > 0) {
+                gran.push("big")
+            }
+        }
+        return gran
+    }
+    console.log(grande([-1, 3, 5, -5]));
+</script>

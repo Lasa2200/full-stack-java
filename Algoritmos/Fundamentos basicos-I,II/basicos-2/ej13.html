@@ -1,0 +1,28 @@
+<script>
+    //Cambiar hacia el centro -  Dado un array,
+    // cambia el primer y último valor, el tercero con el ante penútimo, 
+    //etc. Ejemplo: cambiaHaciaElCentro([true, 42, “Ada”, 2, “pizza”])
+    // cambia el array a [“pizza¨, 42, “Ada”, true].
+
+    function cambia(x) {
+        uno = 0;
+        dos = 0;
+        var nuevo = []
+        for (var i = 0; i < x.length; i++) {
+            if (x[i] == x[0]) {
+                uno = x[i]
+                nuevo.push(x[x.length - 1])
+            } else if (x[i] == x[2]) {
+                dos = x[i]
+                nuevo.push(x[x.length - 3])
+            } else if (x[i] == x[x.length - 3]) {
+                nuevo.push(dos)
+            } else if (x[i] == x[x.length - 1]) {
+                nuevo.push(uno)
+            } else
+                nuevo.push(x[i])
+        }
+        return nuevo
+    }
+    console.log(cambia([1, 2, 3, 4, 5, 6]))
+</script>

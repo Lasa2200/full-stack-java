@@ -1,0 +1,18 @@
+<script>
+    //Incrementa los Segundos - Dado un array de números arr, agrega 1 a cualquier otro elemento,
+    // específicamente a aquellos cuyo índice es impar (arr[1], arr[3], arr[5], etc).
+    // Luego, console.log cada valor del array y devuelve arr. 
+
+    function agrega(x) {
+        arr = []
+        for (var i = 0; i < x.length; i++) {
+            if (i % 2 != 0) {
+                arr.push(x[i] + 1)
+            } else
+                arr.push(x[i])
+        }
+        return arr
+
+    }
+    console.log(agrega([1, 2, 3, 4, 5, 6, -6]))
+</script>

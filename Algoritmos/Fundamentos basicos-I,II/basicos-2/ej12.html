@@ -1,0 +1,21 @@
+<script>
+    //Siempre hambriento - Crea una función que acepte un array e imprima (print)
+    // “yummy” cada vez que alguno de los valores sea “comida”. 
+    //Si ningún valor es “comida”, entonces imprime “tengo hambre” una vez. 
+
+    function hambriento(x) {
+        comida = []
+        for (var i = 0; i < x.length; i++) {
+            if (x[i] > 0) {
+                comida.push("yummy")
+            }
+        }
+        if (comida.length == 0) {
+            return ("tengo hambre")
+        }
+        if (comida.length > 0) {
+            return comida
+        }
+    }
+    console.log(hambriento([-1, -3, -5]));
+</script>

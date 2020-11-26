@@ -12,7 +12,7 @@
         $(document).ready(function() {
             $('form').submit(function() {
                 url = "http://api.openweathermap.org/data/2.5/weather?q=" + $('#busqueda').val() + "&APPID=e5a77e3925861fa4205664d3a224f7a3&units=metric";
-                // your code here (build up your url)
+                // your code here (build up your url) 5269a4ad0946d0dfc65f2ec55daefe7d
                 $.get(url, function(res) {
                     // your code here
                     console.log(res);

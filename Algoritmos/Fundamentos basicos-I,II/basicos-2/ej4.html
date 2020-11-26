@@ -1,0 +1,13 @@
+<script>
+    //Doble Visión - Dado un array, crea una función que devuelva un nuevo array donde 
+    //cada valor se duplique. Entonces, doble([1,2,3]) debiera devolver [2, 4, 6] sin cambiar el array original. 
+
+    function doble(x) {
+        var dob = [];
+        for (var i = 0; i < x.length; i++) {
+            dob.push(x[i] * x[i]);
+        }
+        return dob;
+    }
+    console.log(doble([1, 2, 3]))
+</script>

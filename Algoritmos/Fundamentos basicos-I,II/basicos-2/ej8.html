@@ -1,0 +1,17 @@
+<script>
+    //Longitudes previas - Pasado un array (similar a decir ‘tomado un array’
+    // o ‘dado un array’) que contiene strings, reemplaza cada string con un número 
+    //de acuerdo cantidad de letras (longitud) del string anterior. Por ejemplo, 
+    //longitudesPrevias([“programar”,“dojo”, “genial”]) debería devolver [“programar”,9, 4].
+    // Pista: ¿For loops solo puede ir hacia adelante?
+
+    function longitud(x) {
+        var previo = []
+        previo.push(x[0])
+        for (var i = 1; i < x.length; i++) {
+            previo.push(x[i - 1].length)
+        }
+        return previo
+    }
+    console.log(longitud(["programar", "dojo", "genial"]))
+</script>
