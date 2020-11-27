@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="GOT" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -11,20 +11,15 @@
     <title>Game of Thrones</title>
 
     <script>
-        $(document).ready(function() {
-            $('form').submit(function() {
-                url = 'https://anapioficeandfire.com/api/characters/' + $('#busqueda ').val() + ;
-                $("img").click(function clikeo() {
-                    var b = $(this).attr("id");
-                    $.get('https://anapioficeandfire.com/api/characters/' + b + "/", function(res) {
-                        $.get(url, function(res) {
-                            console.log(res);
-                            $(".NOMBRE").html("<h2>" + res.name + "</h2>");
-                            $(".WORDS").html("<p> Words :" + res.types[0].type.name + "</p>");
-                            $(".TITLE").html("<p> Titulo :" + res.height + "</p>");
-                        }, 'json');
-                    });
-                });
+        $(document).ready(function(res) {
+            $("img").click(function clikeo() {
+                var b = $(this).attr("id");
+                $.get("https://anapioficeandfire.com/api/houses/" + b + "", function(res) {
+                    console.log(res);
+                    $(".NAME").html("<p> NAME: " + res.name + "</p>");
+                    $(".WORDS").html("<p> WORDS:" + res.words + "</p>");
+                    $(".TITLE").html("<p> TITLE :" + res.titles + "</p>");
+                }, 'json');
             });
         });
     </script>
@@ -66,25 +61,22 @@
 
     <div class="contenedor">
         <h1>Game of Throne</h1>
-        <img class="imagen" src="imagen/stark.jpg" alt="stark">
-        <img class="imagen" src="imagen/targaryen.jpg" alt="targaryen">
-        <img class="imagen" src="imagen/lannister.jpg" alt="lannister">
-        <img class="imagen" src="imagen/baratheon.png" alt="baratheon">
+        <img id="362" class="casa" src="imagen/stark.jpg" alt="stark">
+        <img id="378" class="casa" src="imagen/targaryen.jpg" alt="targaryen">
+        <img id="229" class="casa" src="imagen/lannister.jpg" alt="lannister">
+        <img id="17" class="casa" src="imagen/baratheon.png" alt="baratheon">
 
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 25rem;">
             <!-- Vertically centered modal -->
             <div class="card-body">
                 <h5 class="card-title">House Details</h5>
-                <div id="imagenGot"></div>
-                <p class="NOMBRE :">
-                </P>
+                <!-- <div id="imagenGot"></div>-->
+                <p class="NAME :"></p>
                 <p class="WORDS :"></p>
                 <p class="TITLE :"></p>
             </div>
         </div>
-
-
-
-
-
     </div>
+</body>
+
+</html>
