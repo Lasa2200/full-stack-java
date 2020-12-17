@@ -78,24 +78,32 @@ order by `percentage` DESC
 
 --5. ¿Qué consulta haría para obtener todos los países con un área de superficie inferior a 501 y una población superior a 100,000? (2)--
 
+SELECT * from countries
+where population > 100000.00
+and surface_area < 501
 
 --6. ¿Qué consulta harías para obtener países con solo Monarquía Constitucional--
 --con un capital superior a 200 y una esperanza de vida superior a 75 años? (1)--
 
-
---6. ¿Qué consulta harías para obtener países con solo Monarquía Constitucional
--- con un capital superior a 200 y una esperanza de vida superior a 75 años? (1)--
-
+SELECT * from countries
+where government_form = 'Constitutional Monarchy'
+and life_expectancy > 75
 
 
 --7. ¿Qué consulta harías para obtener todas las ciudades de Argentina dentro del distrito de Buenos Aires 
 --y tener una población superior a 500,000? La consulta debe devolver el nombre del país, el nombre de la ciudad,
 -- el distrito y la población. (2)
 
-
+select countries.name As Pais, cities.name As Ciudad, cities.district As distrito, cities.population As poblacion
+from cities join countries 
+on countries.id = cities.country_id 
+where cities.district = "Buenos Aires"
+and cities.population > 500000
 
 --8. ¿Qué consulta harías para resumir el número de países en cada región? 
 --La consulta debe mostrar el nombre de la región y el número de países. Además,
 -- la consulta debe organizar el resultado por el número de países en orden descendente. (2)--
 
-
+select region, count(id) As Paises from countries
+group by region
+order by  paises desc 
