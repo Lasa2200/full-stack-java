@@ -88,6 +88,7 @@ and surface_area < 501
 SELECT * from countries
 where government_form = 'Constitutional Monarchy'
 and life_expectancy > 75
+and countries.capital > 200
 
 
 --7. ¿Qué consulta harías para obtener todas las ciudades de Argentina dentro del distrito de Buenos Aires 

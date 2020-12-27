@@ -44,6 +44,9 @@ values (6,5);
 insert into friendships (user_id,friend_id)
 values (6,4);
 
+delete from users 
+where id =7; -- borrar usuario 7 creado 2 veces--
+
 --5.-Devuelve a los amigos de Eli en orden alfabético.
 SELECT users.first_name, users.last_name, user2.first_name AS friends_first_name, user2.last_name AS friends_last_name
 FROM users
