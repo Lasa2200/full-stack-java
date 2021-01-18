@@ -58,6 +58,18 @@ con los valores de 13,25,32).*/
 			System.out.println("es vocal");
 		 }	
 	}
+	public void alfabeto (ArrayList<String>abecedario) {
+	 Collections.shuffle(abecedario);
+	System.out.println(abecedario.get(abecedario.size()-1));
+	if (abecedario.get(0)=="A" || abecedario.get(0)=="E"||abecedario.get(0)=="I"||abecedario.get(0)=="O"||abecedario.get(0)=="U") {
+		System.out.println("esto es una vocal");
+	}
+	else {
+		System.out.println(abecedario.get(0));
+	}
+	}
+
+
 
 /*4.-Generar y devolver un arreglo con 10 números aleatorios entre 55 - 100.
 Para obtener un número entero aleatorio, puede utilizar el método nextInt de la clase Random.
@@ -96,8 +108,6 @@ Para ordenar una colección, puede utilizar el método sort de la clase Collection
 			System.out.println(numeros.get(numeros.size()-1));
 	}
 	
-	
-	
 /* 6.- Crear una cadena aleatoria con 5 caracteres de longitud.*/
 	
 	public String cadenaAleatoria (ArrayList<String> arreglo) {
@@ -112,20 +122,25 @@ Para ordenar una colección, puede utilizar el método sort de la clase Collection
 			return cadena;
 	}
 
-	
 /*7.- Generar un arreglo con 10 cadenas aleatorias y cada una con 5 caracteres de longitud.*/
 	
 	public void arregloAleatoria () {
-		ArrayList<Integer> cadena10 = new ArrayList<Integer>();// generar ArrayList con el punto add le agregamos valores
+		ArrayList<String> cadena10 = new ArrayList<String>();// generar ArrayList con el punto add le agregamos valores
 		
-		for (int i = 0; i < 5; i++) {//  obtener solo 10 numeros
-			int aleatorio = (int) (Math.random()*(65-5))+5;//  numero aleatorio ente 55-100
-			 
-			cadena10.add (aleatorio);// agregando numeroAleatorio al ArrayList llamada numero
+		for (int i = 0; i <10; i++) {
+			String cadena="";
+		
+		for (int j = 0; j < 5; j++) {//  obtener solo 10 numeros
+			int aleatorio = (int) (Math.random()*(9))+0;//  numero aleatorio ente 55-100
+			cadena= cadena + aleatorio;//string cadena y se concatena 1 numero
+			// agregando numeroAleatorio al ArrayList llamada numero
 		}
-			System.out.println(cadena10);
-	
+		
+		cadena10.add(cadena);
+		}
+		System.out.println(cadena10);
 	}
+	
 	// como hacer para que random se genere 10 veces y guarde en el arraylist
 }// no borrar
 	

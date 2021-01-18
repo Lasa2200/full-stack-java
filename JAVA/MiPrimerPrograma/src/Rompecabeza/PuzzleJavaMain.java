@@ -54,7 +54,7 @@ public class PuzzleJavaMain {
 	            mezclarAbecedario.add("X");
 	            mezclarAbecedario.add("Z");
 	            
-//	            ArrayList<String> abc= new ArrayList<String>(); para no ocupar .add y crear letra a letra
+//	            ArrayList<String> abc= new ArrayList<String>();// para no ocupar .add y crear letra a letra
 //	            
 //	            char[] abecedario =new char[26];
 //	    		for ( int i=0; i<26; i++) {
@@ -63,8 +63,8 @@ public class PuzzleJavaMain {
 //	    			String letraString = Character.toString(letra);
 //	    			abc.add(letraString);
 //	    		}
-	           
-	            //pj.mezclarLetras(mezclarAbecedario);//pj esta dentro de otra clase ej3.-
+//	           
+//	            pj.mezclarLetras(mezclarAbecedario);//pj esta dentro de otra clase ej3.-
 	            //pj.numeroAleatorio3(); // ej4.-
 	            //pj.numeroAleatorio5(); //ej5.-
 	            
