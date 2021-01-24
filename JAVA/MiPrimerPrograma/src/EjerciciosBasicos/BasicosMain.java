@@ -20,8 +20,8 @@ public class BasicosMain{
 	
 		//basicm.arregloImpar();
 		
-		//System.out.println(Arrays.toString(basicm.arregloImpar()));
-		//System.out.println(basicm.arregloImpar_v2());
+//		System.out.println(Arrays.toString(basicm.arregloImpar()));
+//		System.out.println(basicm.arregloImpar_v2());
 	
 		//int resul=basicm.mayor_y();
 		//system.out.println(basic.mayor_y()); 

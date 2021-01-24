@@ -68,7 +68,7 @@ public class PuzzleJavaMain {
 	            //pj.numeroAleatorio3(); // ej4.-
 	            //pj.numeroAleatorio5(); //ej5.-
 	            
-	            //pj.cadenaAleatoria(mezclarAbecedario);// ej6.-
+	            pj.cadenaAleatoria(mezclarAbecedario);// ej6.-
 	            pj.arregloAleatoria();// ej 7.-
 	         
 	            

@@ -112,7 +112,7 @@ Para ordenar una colección, puede utilizar el método sort de la clase Collection
 	
 	public String cadenaAleatoria (ArrayList<String> arreglo) {
 		String cadena="";
-		for (int i = 0; i < 5; i++) {//  obtener solo 5 
+		for (int i = 0; i < 10; i++) {//  obtener solo 5 
 		
 			int numeroAleatorio = (int) (Math.random()*(arreglo.size()-1))+1;// generar un numero del 1 al tamaño del arreglo, aleatorio, .size ()-1 no se conoce el tamaño del arreglo
 			cadena = cadena + arreglo.get(numeroAleatorio);// .get obtener el dato en la posicion aleatoria
@@ -127,10 +127,10 @@ Para ordenar una colección, puede utilizar el método sort de la clase Collection
 	public void arregloAleatoria () {
 		ArrayList<String> cadena10 = new ArrayList<String>();// generar ArrayList con el punto add le agregamos valores
 		
-		for (int i = 0; i <10; i++) {
+		for (int i = 0; i <=1; i++) {
 			String cadena="";
 		
-		for (int j = 0; j < 5; j++) {//  obtener solo 10 numeros
+		for (int j = 0; j < 10; j++) {//  obtener solo 10 numeros
 			int aleatorio = (int) (Math.random()*(9))+0;//  numero aleatorio ente 55-100
 			cadena= cadena + aleatorio;//string cadena y se concatena 1 numero
 			// agregando numeroAleatorio al ArrayList llamada numero
@@ -142,6 +142,10 @@ Para ordenar una colección, puede utilizar el método sort de la clase Collection
 	}
 	
 	// como hacer para que random se genere 10 veces y guarde en el arraylist
+	
+	
+	// generar 10 numer0s aleatorios
+	
 }// no borrar
 	
 
