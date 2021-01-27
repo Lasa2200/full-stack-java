@@ -1,0 +1,100 @@
+
+
+<?xml version="1.0" encoding="UTF-8">
+<MenuDelDia>
+    <item category="entradas">
+        <name>Ensalada con Pollo</name>
+        <description>Una ensalada con pollo.</description>
+        <price>$10.99</price>
+    </item>
+    <item category="entradas">
+        <name>Sánduche de Pollo</name>
+        <description>Un sánduche de pollo. </description>
+        <price>$12.99</price>
+    </item>
+    <item category="entradas">
+        <name>Sánduche de Pastrami</name>
+        <description>Un sánduche hecho con pastrami.</description>
+        <price>$13.99</price>
+    </item>
+    <item category="desayunos">
+        <name>Huevos con Queso</name>
+        <description>Huevos revueltos con Queso.</description>
+        <price>$9.99</price>
+    </item>
+    <item category="desayunos">
+        <name>Huevos con jamon</name>
+        <description>Huevos revueltos con jamon.</description>
+        <price>$9.99</price>
+    </item>
+    <item category="cena">
+        <name>Tortilla de Porotos verdes</name>
+        <description>Tortilla de porotos verdes, huevo y aliños.</description>
+        <price>$15.99</price>
+    </item>
+      <item category="cena">
+        <name>Consome de pollo</name>
+        <description>Sopa de pollo y verduras.</description>
+        <price>$15.99</price>
+    </item>
+    <item category="bebidas">
+        <name>Coca-Cola</name>
+        <description>Una gaseosa.</description>
+        <price>$0.99</price>
+    </item>
+    <item category="bebidas">
+        <name>Jugo de Naranja</name>
+        <description>Un jugo hecho con naranjas.</description>
+        <price>$0.99</price>
+    </item>    
+</MenuDelDia><
+    
+    // Leer
+A continuación se muestra un archivo de ejemplo web.xml que usaremos para configurar servlets. 
+Su trabajo es analizar este archivo y dar una hipótesis del propósito de cada etiqueta.
+
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+    <display-name>SimpleServletProject</display-name>
+    
+    <servlet>
+        <servlet-name>simpleServlet</servlet-name>
+        <servlet-class>org.codingdojo.tutorial.SimpleServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>simpleServlet</servlet-name>
+        <url-pattern>/simpleServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>xmlServlet</servlet-name>
+        <servlet-class>or.codingdojo.tutorial.XmlServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>xmlServlet</servlet-name>
+        <url-pattern>/xmlServletpath</url-pattern>
+    </servlet-mapping>
+    
+    <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+</web-app>
+
+
+● <display-name> = Nombre del proyecto
+
+● <servlet> = son programas en java que responden a solicitudes y repeticiones.
+
+● <servlet-name> = nombre de la clase servelets
+
+● <servlet-class> =es una clase de java que actua como aplicacion intermedia para responder a peticionesde informacion.
+
+● <servlet-mapping> =especifica un patrón de URL y el nombre de un servlet declarado para usar con solicitudes cuya URL coincide con el patrón
+
+● <url-pattern>=devuelve el valor del pattern atributo de un campo de URL
+
+● <welcome-file>=controla el punto de entrada a la aplicación.
+
+

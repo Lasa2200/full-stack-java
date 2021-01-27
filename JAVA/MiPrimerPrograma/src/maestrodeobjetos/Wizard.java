@@ -5,7 +5,7 @@ public class Wizard extends Human{
 
 	public Wizard() {
 		super(3,3,8,50D);
-		// TODO Auto-generated constructor stub
+		
 	}
 	// método heal(Human) que aumentará la salud del otro Human en los puntos de intelligence que tenga el Wizard.
 	public void heal(Human sanado) {
