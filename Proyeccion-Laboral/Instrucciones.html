@@ -1,16 +1,71 @@
 <html>
 <script>
-//lea todo antes de empezar
+    private String numerocuenta;
+    private double saldocorriente;
+    private double saldoahorro;
+    private static int cuentascreadas;
+    private static int totaldinero;
 
-//Dado un arreglo x, digamos [1,5,10,-2], 
-//escribir un método que devuelva un arreglo con el número máximo, 
-//el número mínimo y el valor promedio que hay en el arreglo x. 
-//El arreglo devuelto debe contener solo 3 valores [Max, Min, Prom]
+    BankAccount() {
+        this.numerocuenta = generarCuenta();
+        this.totaldinero += getSaldoahorro() + getSaldocorriente();
+        this.cuentascreadas++;
+    }
 
-//Dado un arreglo x, digamos [1,5,10,-2], 
-//escribir un método que reemplace cualquier número negativo por 0. 
-//Cuando el método haya terminado, x no debe tener valores negativos, digamos como [1,5,10,0]
-//ahora que leyo todo solo imprima su nombre
+    private String generarCuenta() {
+        String numero = "";
 
-</script>
-</html>
+        for (int i = 0; i < 10; i++) {
+            numero += Integer.toString((int) Math.random() * 9);
+        }
+
+        return numero;
+    }
+
+    private double getSaldoahorro() {
+        return saldoahorro;
+    }
+    private double getSaldocorriente() {
+        return saldocorriente;
+    }
+    public void depositarAhorro(int cantidad) {
+        System.out.println("cantidad a depositar: " + cantidad + " a la cuenta de Ahorro");
+        saldoahorro += cantidad;
+        totaldinero += cantidad;
+    }
+
+    public void depositarCorriente(int cantidad) {
+        System.out.println("cantidad a depositar: " + cantidad + " a la cuenta Corriente");
+        saldocorriente += cantidad;
+        totaldinero += cantidad;
+    }
+
+    public void retirarAhorro(int cantidad) {
+        System.out.println("cantidad a retirar: " + cantidad + " a la cuenta de Ahorro");
+
+        if (saldoahorro - cantidad < 0 || saldoahorro == 0) {
+            System.out.println("Saldo insuficiente para retiro");
+        } else {
+            saldocorriente -= cantidad;
+            totaldinero -= cantidad;
+        }
+    }
+
+    public void retirarCorriente(int cantidad) {
+        System.out.println("cantidad a retirar: " + cantidad + " a la cuenta Corriente");
+
+        if (saldocorriente - cantidad < 0 || saldocorriente == 0) {
+            System.out.println("Saldo insuficiente para retiro");
+        } else {
+            saldocorriente -= cantidad;
+            totaldinero -= cantidad;
+        }
+    }
+
+    public void verSaldo() {
+        System.out.println("saldo en cuenta de Ahorro: " + getSaldoahorro());
+        System.out.println("saldo en cuenta Corriente: " + getSaldocorriente());
+        System.out.println("total: " + (getSaldoahorro() + getSaldocorriente()));
+
+    }
+    }
