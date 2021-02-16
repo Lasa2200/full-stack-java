@@ -29,17 +29,16 @@ public class Home extends HttpServlet {
 		ArrayList<Team> teamList = new ArrayList<Team> ();
 		if(roster!=null) {
 			teamList = roster.getTeams();
-			request.setAttribute("teamList",teamList);
-		
+			for (Iterator iterator = teamList.iterator(); iterator.hasNext();) {
+				Team team = (Team) iterator.next();
+				team.setNum_players(team.getPlayer().size());
 
-		 for (Iterator iterator = teamList.iterator(); iterator.hasNext();) {
-			Team team = (Team) iterator.next();
-			System.out.println(team.getTeam_name());
-			
-		}
+			}
+			request.setAttribute("teamList",teamList);
+
 		}
 		RequestDispatcher view = request.getRequestDispatcher("/WEB-INF/index.jsp");
-        view.forward(request, response);
+		view.forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

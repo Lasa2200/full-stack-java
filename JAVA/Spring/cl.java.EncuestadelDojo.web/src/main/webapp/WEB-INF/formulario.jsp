@@ -20,8 +20,8 @@
 			<option value="Temuco">Temuco</option>
 			<option value="Mi Casa">Mi Casa</option>
 		</select> <br>
-		<br> <label for="lenguaje"> Favorite Lenguage: </label> <select
-			name="lenguaje" id="lenguaje">
+		<br> <label for="lenguaje"> Favorite Lenguage: </label> 
+		<select name="lenguaje" id="lenguaje">
 			<option value="Java">Java</option>
 			<option value="JavaScript">JavaScript</option>
 			<option value="Phyton">Phyton</option>
