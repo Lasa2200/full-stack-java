@@ -35,5 +35,13 @@ public class BookService {
 			return null;
 		}
 	}
+	public Book updateBook(Book b) {
+		// TODO Auto-generated method stub
+		return bookRepository.save(b);
+	}
+	public void deleteBook(Long id) {
+		// TODO Auto-generated method stub
+		bookRepository.deleteById(id);
+	}
 }
 

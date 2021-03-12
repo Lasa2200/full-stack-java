@@ -36,14 +36,12 @@ public class Book {
 	private Date updatedAt;
 
 	public Book() {
-		super();
-
 
 	}
 
 	public Book(String title, String description,
-			String language, Integer numberOfPages) {;
-		
+			String language, Integer numberOfPages) {
+
 		this.title = title;
 		this.description = description;
 		this.language = language;
