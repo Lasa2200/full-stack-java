@@ -1,0 +1,35 @@
+<script>
+    //El algoritmo deberá recibir el precio de venta y el costo del producto, para realizar el cálculo del margen.
+    //Si el margen de un producto es mayor o igual a 10%, entonces el algoritmo deberá retornar “MARGEN OK”
+    //Si el margen de un producto es menor al 10%, entonces el algoritmo debe retornar “ALERTA MARGEN BAJO MINIMO”
+
+    //Si el margen de un producto es menor que 0, entonces el algoritmo deberá retornar “ERROR MARGEN NEGATIVO”
+
+    //Si el margen de un producto es superior a 100%, entonces deberá retornar “ADVERTENCIA POSIBLE ERROR EN COSTO”,
+    // siempre y cuando el precio del producto sea igual o superior a 1.000 US$
+
+    //En el caso de un producto de menos de 1.000 US$, entonces deberá lanzar “ADVERTENCIA POSIBLE ERROR COSTO” 
+    //si es que el margen es superior a 50%.
+
+
+
+    function margen(pc, pv) {
+        var m = (pv - pc) / pv * 100;
+        if (m >= 10) {
+            console.log("MARGEN OK");
+        } else
+            console.log("ALERTA MARGEN BAJO MINIMO");
+        if (m >= 0) {
+            console.log("ERROR MARGEN NEGATIVO");
+        } else if (m > 100, pv >= 1000) {
+            console.log("ADVERTENCIA POSIBLE ERROR EN COSTO");
+        } else if (m > 50, pv = 1000) {
+            console.log("ADVERTENCIA POSIBLE ERROR COSTO");
+        }
+
+        return console.log("el margen es:" + m);
+    }
+
+    var z = margen(100, 150)
+    console.log(z)
+</script>

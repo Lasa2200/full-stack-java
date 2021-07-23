@@ -7,6 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.Size;
@@ -28,6 +30,7 @@ public class LenguajeModel {
 	    @Size(min = 3, max = 40)
 	    private char currentVersion;
 	    @Min (1)
+	    @Column(updatable=false)
 	    @DateTimeFormat(pattern="yyyy-MM-dd")
 		private Date createdAt;
 		@DateTimeFormat(pattern="yyyy-MM-dd")
@@ -36,6 +39,14 @@ public class LenguajeModel {
 		public Lenguaje() {
 			
 		}
+		
+
+		public Lenguaje( char nombre, char creator, char currentVersion) {
+			this.nombre = nombre;
+			this.creator = creator;
+			this.currentVersion = currentVersion;
+		}
+
 
 		public Long getId() {
 			return id;
@@ -69,9 +80,15 @@ public class LenguajeModel {
 			this.currentVersion = currentVersion;
 		}
 
-	    
+		@PrePersist
+		protected void onCreate(){
+			this.createdAt = new Date();
+		}
+		@PreUpdate
+		protected void onUpdate(){
+			this.updatedAt = new Date();
 	    
 	} 
 	}
-
+}
 

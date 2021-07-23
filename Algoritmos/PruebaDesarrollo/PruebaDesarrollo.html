@@ -1,0 +1,75 @@
+<script>
+    //Prueba desarrollo
+    //1. - Puede desarrollar el código en el lenguaje de programación que más le acomode, esto
+    //incluye seudocódigo.2. - Luego de cada desarrollo, deberá explicar con sus palabras lo
+    //que desarrollo y porque tomo dicha decisión para la solución.3. - Cada algoritmo
+    //desarrollado, debe contar con su diagrama de flujo correspondiente.4. - El resultado debe
+    //enviarlo vía correo y además debe subir el resultado a su cuenta GitHub / GitLab, si no la
+    //posee puede compartir vía URL por algún medio como Google Drive o similar.
+
+    //Solo pares
+    //Descripción
+    //En este problema deberán mostrar elementos dependiendo de una condición.
+    //Parte 1
+    //Deberán crear un programa, el cual deberá recibir un parámetro n ingresadopor el usuario, y mostrar
+    //los primeros n pares.
+    //Si, la salida del programa deberá ser: 0,2,4,6
+
+    function Pares(arreglo) {
+        for (i = 0; i < arreglo.length; i++) {
+            if (arreglo[i] % 2 == 0) {
+                console.log(pares[0, 1, 2, 3, 4, 5, 6])
+            }
+        }
+    }
+
+
+
+    //Parte 2
+    //Ahora deberán crear el programa, donde no se considere el cero. Si n=4 , la salida del
+    //programa deberá ser: 2,4,6,8
+
+    function Pares(arreglo) {
+        for (i = 1; i < arreglo.length; i++) {
+            if (arreglo[i] % 2 == 0) {
+                console.log(pares[0, 1, 2, 3, 4])
+            }
+        }
+    }
+
+
+
+    //Suma impares
+
+    //Descripción
+    //En este problema realizaremos sumatorias, con la condición que el número a sumar será impar.
+
+    //Parte 1
+    //Crea programa donde se sumen todos los valores impares desde 0 hasta n, donde nes ingresado por
+    //el usuario.
+    //Si  n=6, la salida del programa deberá ser:9
+    //que corresponde a sumar 1+3+5
+
+    function sumaimpares() {
+        suma = 0;
+        for (i = 0; i <= 6; i++) {
+            if (i / 2 == 0) {
+                {
+                    suma += i;
+                }
+            }
+            return suma;
+        }
+        console.log(sumaimpares());
+</script>
+
+
+//Parte 2 //Crear programa, donde el usuario ingresa dos valores, el límite inferior (min) y //superior(max) del intervalo para realizar la suma de los impares. Si min=6 y // max=30, la salida del programa deberá saber 216 // que corresponde sumar 7+9+11+13+15+17+19+21+23+25+27+29
+function maxmin(arreglo){//arreglo=[3,7,1] ; 3->length var arrAux=[]; var suma=0;//3>10>9 var minimo=arreglo[0];//-1 var maximo=arreglo[0];//3>7 for(var i =0; i
+< arreglo.length; i++){//i=0>1>2>3 //valor maximo if(maximo
+    < arreglo[i]){ maximo=a rreglo[i] } //valor minimo if(minimo> arreglo[i] ){ minimo = arreglo[i] } suma= suma + arreglo[i] } arrAux.push(maximo) arrAux.push(minimo) return arrAux } b= maxmin([3,7,-1]) console.log(b)//[7,-1,3] //Secuencia de Fibonacci //Descripción //La secuencia de Fibonacci se caracteriza donde
+        el siguiente número de la secuencia es la suma de //los dos anteriores. 0,1,1,2,3,5,8,13,21,34,55,89,144 //Donde F(0) = 0 F(1) = 1 F(2) = 1 F(3) = 2 F(4) = 3 F(n) = F(n-1) + F (n-2) //Requerimiento //Se debe crear un programa que reciba un numero
+        ingresado por el usuario, que indique cuántos //elementos de la serie de Fibonacci se deben mostrar, y el programa debe mostrar los primeros n //números de la secuencia de Fibonacci. //Si se ingresa n = 7, se debe mostrar el siguiente resultado
+        0,1,1,2,3,5,8 function fibonacci(x){ var anterior0 =0 var anterior1 =1 var fibo =0 console.log(anterior0); console.log(anterior1); for(var i=0; i
+        <x-1; i++){ fibo=anterior0 + anterior1; console.log (fibo); anterior0=anterior1; anterior1=f ibo;
+            } } f=fibonacci(7); </script>

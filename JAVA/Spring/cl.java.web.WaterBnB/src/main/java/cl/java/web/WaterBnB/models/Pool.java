@@ -7,32 +7,32 @@ import javax.persistence.*;
 
 
 @Entity
-@Table(name="pools")
+@Table(name = "pool")
 public class Pool {
-
+	
 	@Id
 	@GeneratedValue
 	private Long id;
 	private String address;
-
-	@Column(columnDefinition ="Text")
+	
+	@Column(columnDefinition="TEXT")
 	private String description;
 	private Float cost;
 	private String size;
-
-	@ManyToOne(fetch =FetchType.LAZY)
-	private User user;
-
-	@OneToMany(mappedBy="pool",fetch=FetchType.LAZY)
-	private List<Review>review;
-
-
-	@Column(updatable =false)
+	
+	@Column(updatable = false)
 	private Date createdAt;
-	private Date updatedAt;
-
-	public Pool() {
-
+	private Date updateAt;
+	
+	@ManyToOne(fetch = FetchType.LAZY)
+	private User user;
+	
+	@OneToMany(mappedBy="pool", fetch = FetchType.LAZY)
+	private List<Review> reviews;
+	
+	public Pool()
+	{
+		
 	}
 
 	public Long getId() {
@@ -83,19 +83,31 @@ public class Pool {
 		this.user = user;
 	}
 
-	public List<Review> getReview() {
-		return review;
+	public List<Review> getReviews() {
+		return reviews;
 	}
 
-	public void setReview(List<Review> review) {
-		this.review = review;
+	public void setReviews(List<Review> reviews) {
+		this.reviews = reviews;
 	}
+	
 	@PrePersist
-	protected void onCreate() {
-		this.createdAt =new Date();
+	protected void onCreate()
+	{
+		this.createdAt = new Date();
 	}
-	@PrePersist
-	protected void onUpdate() {
-		this.updatedAt =new Date();
-}
+	
+	@PreUpdate
+	protected void onUpdate() 
+	{
+		this.setUpdateAt(new Date());
+	}
+
+	public Date getUpdateAt() {
+		return updateAt;
+	}
+
+	public void setUpdateAt(Date updateAt) {
+		this.updateAt = updateAt;
+	}
 }
